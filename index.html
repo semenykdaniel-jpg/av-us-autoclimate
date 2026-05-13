@@ -1075,6 +1075,7 @@
           </svg>
           <div class="info-item-text">
             <strong>(531) 229-1160</strong>
+            <span data-en="Main Line" data-uk="Основна лінія">Main Line</span>
           </div>
         </div>
         <div class="info-item">
@@ -1123,14 +1124,6 @@
             <input type="hidden" id="car" name="car" />
           </div>
 
-
-          <div class="field">
-            <label for="time" data-en="Preferred Date &amp; Time" data-uk="Бажана дата та час">Preferred Date &amp; Time</label>
-            <input type="text" id="time" name="time"
-              placeholder="e.g. Mon May 13, morning"
-              data-ph-en="e.g. Mon May 13, morning"
-              data-ph-uk="напр. Пн 13 трав., ранок" />
-          </div>
 
           <div class="field">
             <label for="message" data-en="Describe the Problem" data-uk="Опис проблеми">Describe the Problem</label>
@@ -1573,7 +1566,7 @@ updateActiveNav();
 /* ── BOOKING FORM ── */
 
 // !! ЗАМЕНИТЬ ID на свой с formspree.io !!
-const FORMSPREE_URL = 'https://formspree.io/f/XXXXXXXX';
+const FORMSPREE_URL = 'https://formspree.io/f/mlgzvnjr';
 
 // !! ЗАМЕНИТЬ на свой webhook URL с make.com !!
 const MAKE_WEBHOOK_URL = 'YOUR_MAKE_WEBHOOK_URL_HERE';
@@ -1603,7 +1596,6 @@ form.addEventListener('submit', async e => {
     name:    form.name.value.trim(),
     phone:   form.phone.value.trim(),
     car:     form.car.value.trim(),
-    time:    form.time.value.trim(),
     message: form.message.value.trim(),
   };
 
