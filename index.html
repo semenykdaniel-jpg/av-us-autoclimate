@@ -9,6 +9,12 @@
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="IMG_2922.JPEG" />
   <link rel="apple-touch-icon" href="IMG_2922.JPEG" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Preload / DNS hints -->
+  <link rel="preload" as="image" href="IMG_2922.JPEG" />
+  <link rel="dns-prefetch" href="//formspree.io" />
+  <link rel="dns-prefetch" href="//maps.google.com" />
 
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -874,6 +880,7 @@
   <a href="#services" data-en="Services" data-uk="Послуги">Services</a>
   <a href="#contact"  data-en="Contact"  data-uk="Контакти">Contact</a>
   <a href="#booking"  data-en="Book Appointment" data-uk="Записатись на прийом">Book Appointment</a>
+  <button class="lang-toggle" id="langBtnMob" style="margin-top:.4rem;align-self:flex-start;">UK</button>
 </div>
 
 <!-- ─── HERO ─── -->
@@ -897,7 +904,7 @@
       <a href="#booking" class="btn btn-primary"
         data-en="Book Appointment" data-uk="Записатись на прийом">Book Appointment</a>
       <a href="tel:+15312291160" class="btn btn-ghost">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.1 19.79 19.79 0 0 1 1.64 3.55 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.9 5.9l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
         (531) 229-1160
@@ -925,7 +932,7 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-photo reveal">
-        <img src="IMG_9418.JPG" alt="AV-US Autoclimate team">
+        <img src="IMG_9418.JPG" alt="AV-US Autoclimate team" loading="lazy" width="800" height="500">
       </div>
       <div class="about-text reveal">
         <p class="s-tag" data-en="Who we are" data-uk="Хто ми">Who we are</p>
@@ -969,7 +976,7 @@
 
       <!-- Card 1 -->
       <div class="svc-card">
-        <svg class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <!-- Engine block body -->
           <rect x="9" y="21" width="34" height="16" rx="2.5"/>
           <!-- Cylinder heads -->
@@ -998,7 +1005,7 @@
 
       <!-- Card 2 -->
       <div class="svc-card">
-        <svg class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <!-- Snowflake — 6 arms -->
           <line x1="26" y1="7" x2="26" y2="37"/>
           <line x1="10.1" y1="17" x2="41.9" y2="27"/>
@@ -1029,7 +1036,7 @@
 
       <!-- Card 3 -->
       <div class="svc-card">
-        <svg class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" class="svc-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <!-- Bold lightning bolt (central) -->
           <path d="M30 5 L17 28 L26 28 L22 47 L35 24 L26 24 Z"/>
           <!-- Circuit traces — top-left -->
@@ -1070,7 +1077,7 @@
           Fill out the form — we'll call you back to confirm your time slot.
         </p>
         <div class="info-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.1 19.79 19.79 0 0 1 1.64 3.55 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.9 5.9l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
           </svg>
           <div class="info-item-text">
@@ -1079,7 +1086,7 @@
           </div>
         </div>
         <div class="info-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
           </svg>
           <div class="info-item-text">
@@ -1379,6 +1386,10 @@
   }
 
   window.addEventListener('resize', () => { resize(); nodes = makeNodes(70); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancelAnimationFrame(animId);
+    else { animId = requestAnimationFrame(draw); }
+  });
   init();
 })();
 
@@ -1390,7 +1401,10 @@ function applyLang(l) {
   lang = l;
   localStorage.setItem(LANG_KEY, l);
   document.documentElement.lang = l;
-  document.getElementById('langBtn').textContent = l === 'en' ? 'UK' : 'EN';
+  const label = l === 'en' ? 'UK' : 'EN';
+  document.getElementById('langBtn').textContent = label;
+  const mobBtn = document.getElementById('langBtnMob');
+  if (mobBtn) mobBtn.textContent = label;
 
   document.querySelectorAll('[data-en]').forEach(el => {
     const v = el.getAttribute('data-' + l);
@@ -1413,6 +1427,8 @@ function applyLang(l) {
 }
 
 document.getElementById('langBtn').addEventListener('click', () => applyLang(lang === 'en' ? 'uk' : 'en'));
+const _mobLangBtn = document.getElementById('langBtnMob');
+if (_mobLangBtn) _mobLangBtn.addEventListener('click', () => applyLang(lang === 'en' ? 'uk' : 'en'));
 applyLang(lang);
 
 /* ── MOBILE NAV ── */
@@ -1571,9 +1587,10 @@ const FORMSPREE_URL = 'https://formspree.io/f/mlgzvnjr';
 // !! ЗАМЕНИТЬ на свой webhook URL с make.com !!
 const MAKE_WEBHOOK_URL = 'YOUR_MAKE_WEBHOOK_URL_HERE';
 
-const form      = document.getElementById('bookingForm');
-const submitBtn = document.getElementById('submitBtn');
-const statusEl  = document.getElementById('form-status');
+const form        = document.getElementById('bookingForm');
+const submitBtn   = document.getElementById('submitBtn');
+const submitLabel = document.getElementById('submitLabel');
+const statusEl    = document.getElementById('form-status');
 
 const MSG = {
   en: {
@@ -1606,7 +1623,7 @@ form.addEventListener('submit', async e => {
   }
 
   submitBtn.disabled = true;
-  document.getElementById('submitLabel').textContent = MSG[lang].sending;
+  submitLabel.textContent = MSG[lang].sending;
   statusEl.className = '';
   statusEl.textContent = '';
 
@@ -1643,7 +1660,7 @@ form.addEventListener('submit', async e => {
     statusEl.textContent = MSG[lang].err;
   } finally {
     submitBtn.disabled = false;
-    document.getElementById('submitLabel').textContent = lang === 'uk' ? 'Надіслати запит' : 'Send Request';
+    submitLabel.textContent = lang === 'uk' ? 'Надіслати запит' : 'Send Request';
   }
 });
 </script>
