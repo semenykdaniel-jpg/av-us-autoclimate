@@ -242,9 +242,12 @@
     .mob-nav a:last-child { border-bottom: none; }
     .mob-nav a:hover { color: var(--white); }
 
+    .mob-lang { display: none; }
+
     @media (max-width: 768px) {
       nav { display: none; }
       .burger { display: flex; }
+      .mob-lang { display: inline-flex; margin-left: 0; margin-right: .4rem; }
     }
 
     /* ─── HERO ─── */
@@ -869,6 +872,7 @@
     <button class="lang-toggle" id="langBtn">UK</button>
   </nav>
 
+  <button class="lang-toggle mob-lang" id="langBtnMob">UK</button>
   <button class="burger" id="burger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -880,7 +884,6 @@
   <a href="#services" data-en="Services" data-uk="Послуги">Services</a>
   <a href="#contact"  data-en="Contact"  data-uk="Контакти">Contact</a>
   <a href="#booking"  data-en="Book Appointment" data-uk="Записатись на прийом">Book Appointment</a>
-  <button class="lang-toggle" id="langBtnMob" style="margin-top:.4rem;align-self:flex-start;">UK</button>
 </div>
 
 <!-- ─── HERO ─── -->
@@ -1385,7 +1388,7 @@
     draw();
   }
 
-  window.addEventListener('resize', () => { resize(); nodes = makeNodes(70); });
+  window.addEventListener('resize', () => { const prevW = W; resize(); if (Math.abs(W - prevW) > 10) nodes = makeNodes(70); });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) cancelAnimationFrame(animId);
     else { animId = requestAnimationFrame(draw); }
